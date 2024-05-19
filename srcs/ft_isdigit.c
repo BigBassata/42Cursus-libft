@@ -6,15 +6,13 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 14:37:02 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/19 14:37:05 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/19 17:10:11 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
-	{
-		return (1);
-	}
-	return (0);
+	return (c >= '0' && c <= '9');
 }
