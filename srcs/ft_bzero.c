@@ -6,11 +6,11 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 15:18:21 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/19 17:09:34 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/20 16:23:09 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

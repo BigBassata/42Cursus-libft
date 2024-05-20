@@ -6,11 +6,11 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 14:37:02 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/19 17:10:11 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/20 16:20:46 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
