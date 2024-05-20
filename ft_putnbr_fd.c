@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:03 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/20 16:16:51 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/21 01:24:28 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@ void	ft_putnbr_fd(int nb, int fd)
 		ft_putchar_fd('-', fd);
 		nb = -nb;
 	}
-	if (nb > 0)
+	if (nb >= 10)
 	{
-		ft_putchar_fd(nb / 10, fd);
-		ft_putchar_fd(nb % 10 + 48, fd);
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putnbr_fd(nb % 10, fd);
 	}
 	else
 	{
-		ft_putchar_fd(nb + 48, fd);
+		ft_putchar_fd(nb + '0', fd);
 	}
 }
 
 int	main(void)
 {
-	ft_putnbr_fd(-0, 1);
+	ft_putnbr_fd(123, 1);
 }
