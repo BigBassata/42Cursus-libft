@@ -6,8 +6,20 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:00 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/20 16:21:43 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/21 18:26:46 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+	}
+	ft_putchar_fd('\n', fd);
+}
