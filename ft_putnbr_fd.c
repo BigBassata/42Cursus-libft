@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:03 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/21 01:24:28 by user             ###   ########.fr       */
+/*   Updated: 2024/05/22 00:51:08 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_putnbr_fd(int nb, int fd)
 	}
 }
 
-int	main(void)
-{
-	ft_putnbr_fd(123, 1);
-}
+// int	main(void)
+// {
+// 	ft_putnbr_fd(123, 1);
+// }

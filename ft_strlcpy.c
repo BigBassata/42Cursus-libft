@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:34 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/21 01:44:12 by user             ###   ########.fr       */
+/*   Updated: 2024/05/22 01:13:20 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
+
+// int main(void)
+// {
+// 	char dest[20] = "Bonjour tlm";
+// 	char src[] = "Hello World";
+// 	size_t length;
+
+// 	length = ft_strlcpy(dest, src, sizeof(dest));
+// 	printf("%zu\n", length);
+// 	return (0);
+// }
