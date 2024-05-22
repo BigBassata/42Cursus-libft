@@ -6,13 +6,13 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 15:18:26 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/21 17:54:47 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/22 18:00:38 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *calloc(size_t nmemb, size_t size)
+void	*calloc(size_t nmemb, size_t size)
 {
 	const size_t	size_total = nmemb * size;
 	void			*ptr;

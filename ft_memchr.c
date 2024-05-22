@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:10:33 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/21 17:53:40 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/22 18:01:14 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 //     const char str1[] = "Hello, World!";
 //     char *result1 = ft_memchr(str1, 'W', ft_strlen(str1));
 //     if (result1 != NULL) {
-//         printf("Caractère 'W' trouvé à l'adresse %p: %c\n", result1, *result1);
+//         printf("%c\n", result1, *result1);
 //     } else {
 //         printf("Caractère 'W' non trouvé\n");
 //     }

@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:06 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/20 17:11:22 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/22 18:02:59 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int i; 
-	i = 0; 
+	int	i;
 
-	while(s[i])
+	i = 0;
+	while (s[i])
 	{
-		write(fd, &s[i], 1);
+		write (fd, &s[i], 1);
+		i++;
 	}
-
 }
 
 // int	main(void)

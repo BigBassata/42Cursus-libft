@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 18:19:58 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/20 16:23:14 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/22 17:59:12 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int num;
-	int sign;
+	int	i;
+	int	num;
+	int	sign;
 
 	i = 0;
 	num = 0;
