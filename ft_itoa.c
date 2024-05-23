@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:10:18 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/23 19:28:29 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/23 19:48:09 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ static int	ft_size(long nb)
 	}
 	return (size);
 }
+
 static int	ft_logic(char *str, long nb)
 {
 	int	i;
@@ -57,6 +58,7 @@ static int	ft_logic(char *str, long nb)
 	}
 	return (0);
 }
+
 char	*ft_itoa(int n)
 {
 	long	nb;
