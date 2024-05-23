@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:12:03 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/20 16:22:31 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/23 23:20:08 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+    
+}

@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:40 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/20 16:22:16 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/23 23:20:52 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+
+}
