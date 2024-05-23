@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:12:16 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/22 19:37:04 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/23 18:49:20 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ char	*ft_strrchr(const char *s, int c)
     int i;
     char *last_occ;
 
+    last_occ = NULL;
     c = (char) c;
     i = 0;
     while (s[i])

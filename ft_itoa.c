@@ -6,43 +6,72 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:10:18 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/22 19:37:12 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/23 19:28:29 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int count_size(int n)
+static int	ft_size(long nb)
 {
-    int i ; 
+	int	i;
+	int	size;
 
-    i = 1;
-
-    while (n != 0)
-    {
-        n = n / 10;
-        i++;
-    }
-    return (i);
+	size = 1;
+	i = 0;
+	if (nb < 0)
+	{
+		nb = -nb;
+		size++;
+	}
+	while (nb > 9)
+	{
+		nb = nb / 10;
+		size++;
+	}
+	return (size);
 }
+static int	ft_logic(char *str, long nb)
+{
+	int	i;
+	int	len;
 
+	i = 0;
+	len = ft_size(nb);
+	if (nb < 0)
+	{
+		nb = -nb;
+		str[i] = '-';
+	}
+	while (nb >= 0)
+	{
+		if (nb < 10)
+		{
+			str[len - i - 1] = nb + 48;
+			str[len] = '\0';
+			return (0);
+		}
+		str[len - i - 1] = nb % 10 + 48;
+		i++;
+		nb = nb / 10;
+	}
+	return (0);
+}
 char	*ft_itoa(int n)
-{  
-    char *str;
-    long int nb;
-    int len;
+{
+	long	nb;
+	char	*str;
 
-    long int nb = n;
-    int len = count_size(n);
-    str = (char *)malloc(sizeof(char) * (len));
-    if (str == NULL)
-        return NULL;
-
-    if (n == 0)
-    {
-        str[0] = '0';
-        str[1] = '\0';
-        return (str);
-    }
-    
+	nb = n;
+	str = (char *)malloc((sizeof(char)) * ft_size(nb) + 1);
+	if (!str)
+		return (NULL);
+	ft_logic(str, nb);
+	return (str);
 }
+
+//int	main(int argc, char **argv)
+//{
+//	printf("%s", ft_itoa(atoi(argv[1])));
+//	return (0);
+//}
