@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:10:33 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/22 18:01:14 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/24 15:49:15 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
 
-	c = (unsigned char) c;
+	c = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
@@ -36,5 +36,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 //     } else {
 //         printf("Caractère 'W' non trouvé\n");
 //     }
-//     return 0;
+//     return (0);
 // }

@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:10:18 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/23 19:48:09 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/24 16:58:22 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,8 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-//int	main(int argc, char **argv)
-//{
-//	printf("%s", ft_itoa(atoi(argv[1])));
-//	return (0);
-//}
+// int	main(int argc, char **argv)
+// {
+// 	printf("%s", ft_itoa(atoi(argv[1])));
+// 	return (0);
+// }

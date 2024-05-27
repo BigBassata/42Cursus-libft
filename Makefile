@@ -6,12 +6,11 @@
 #    By: licohen <licohen@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/18 21:37:12 by user              #+#    #+#              #
-#    Updated: 2024/05/23 19:15:23 by licohen          ###   ########.fr        #
+#    Updated: 2024/05/24 14:52:37 by licohen          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
-SRC_DIR		=	./srcs/
 SRC		= 	ft_strlen.c   ft_toupper.c    ft_tolower.c   ft_strrchr.c    ft_strnstr.c   ft_strncmp.c \
 			ft_strlcpy.c  ft_strlcat.c    ft_strchr.c    ft_memset.c     ft_memmove.c   ft_memcpy.c  \
 	   		ft_memcmp.c   ft_memchr.c     ft_isprint.c   ft_isdigit.c    ft_isascii.c   ft_isalpha.c \
