@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 14:09:53 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/24 14:09:57 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/27 15:50:16 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int i;
-	int j;
-	char *join;
+	int		i;
+	int		j;
+	char	*join;
 
 	i = 0;
 	j = 0;

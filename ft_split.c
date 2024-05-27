@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:11 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/27 11:33:10 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/27 15:49:07 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	ft_free_tab(char **tab, int size)
 	}
 	free(tab);
 }
+
 static int	ft_count_words(const char *str, char c)
 {
 	int	nb_words;
@@ -39,6 +40,7 @@ static int	ft_count_words(const char *str, char c)
 	}
 	return (nb_words);
 }
+
 static char	*fill_word(char *str, char const *s, int i, int len)
 {
 	int	j;
@@ -88,7 +90,7 @@ char	**ft_split(char const *s, char c)
 	char			**tab;
 	unsigned int	nb_words;
 
-    if (!s)
+	if (!s)
 		return (NULL);
 	nb_words = ft_count_words(s, c);
 	tab = (char **)malloc(sizeof(char *) * (nb_words + 1));
@@ -102,6 +104,7 @@ char	**ft_split(char const *s, char c)
 	tab[nb_words] = NULL;
 	return (tab);
 }
+
 // int main (void)
 // {
 //     char *s = "Hello comment tu vas";
