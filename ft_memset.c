@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:10:50 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/21 16:49:27 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/27 16:39:22 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ void	*ft_memset(void *s, int c, size_t n)
 // int main ()
 // {
 // 	char s[] = "qwerty";
-// 	printf("%s\n",(char *)ft_memset(s, 'a', 2));
+// 	printf("%s\n",(char *)ft_memset(s, 'a', 3));
 // }

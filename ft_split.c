@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:11:11 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/27 15:49:07 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/28 14:37:23 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,12 +95,10 @@ char	**ft_split(char const *s, char c)
 	nb_words = ft_count_words(s, c);
 	tab = (char **)malloc(sizeof(char *) * (nb_words + 1));
 	if (!tab)
-		return (0);
+		return (NULL);
 	tab = ft_div_words(s, c, tab, nb_words);
 	if (!tab)
-	{
 		return (NULL);
-	}
 	tab[nb_words] = NULL;
 	return (tab);
 }

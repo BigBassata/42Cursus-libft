@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/19 17:10:38 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/28 14:31:12 by licohen          ###   ########.fr       */
+/*   Created: 2024/05/29 13:51:21 by licohen           #+#    #+#             */
+/*   Updated: 2024/05/29 17:12:19 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	i;
+	t_list	*new;
 
-	if (n == 0)
-		return (0);
-	i = 0;
-	while (i < n && ((unsigned char *)s1)[i] == ((unsigned char *)s2)[i])
-		i++;
-	if (i == n)
-		return (0);
-	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+	new = (void *)malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
+
+// int main (void)
+// {
+//     t_list *node;
+//     node = ft_lstnew("ABC");
+//     printf("%s\n", (char *)node ->content);
+//     node = ft_lstnew("NULL");
+//     printf("%s\n", (char *)node ->content);
+// }
