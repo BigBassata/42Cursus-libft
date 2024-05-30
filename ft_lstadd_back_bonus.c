@@ -6,13 +6,13 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 15:35:35 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/29 17:12:56 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/30 15:17:05 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_last_add_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 

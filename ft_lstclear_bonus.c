@@ -6,7 +6,7 @@
 /*   By: licohen <licohen@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 16:06:23 by licohen           #+#    #+#             */
-/*   Updated: 2024/05/29 17:12:48 by licohen          ###   ########.fr       */
+/*   Updated: 2024/05/30 14:47:03 by licohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		temp = current->next;
 		del(current->content);
 		free(current);
+		current = temp;
 	}
 	*lst = NULL;
 }
